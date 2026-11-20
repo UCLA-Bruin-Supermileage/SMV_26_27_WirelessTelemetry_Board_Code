@@ -1,0 +1,10 @@
+build/
+.vscode/
+.settings/
+mx.scratch
+*.elf
+*.bin
+*.hex
+*.map
+*.o
+*.d

@@ -1,0 +1,88 @@
+#ifndef __SMV_BOARD_ENUMS_H
+#define __SMV_BOARD_ENUMS_H
+
+// enumerators for SMV boards.
+// pick the appropriate one for your board
+// every time you send a message, pick the appropriate data type for that message.
+
+enum CAN_controllers{
+	CAN_1,
+	CAN_2
+};
+
+enum devices {
+    Safety,
+    UI,
+    FC,
+    RC,
+    Motor_Controller,
+    Joule_H,
+    Joule_L,
+    DAQ_Board,
+    IMU_1,
+    IMU_2,
+    IMU_3
+};
+
+enum motorMessage {
+    Hall_Velocity,
+    Motor_Torque,
+    Motor_Current,
+    Board_Temp,
+    Motor_Temp,
+};
+
+enum UIMessage {
+    Emergency_Stop,
+    Supercap_Discharge,
+    Blink_Left,
+    Blink_Right,
+    Reverse,
+    Headlights,
+    Wipers,
+    Horn,
+    Hazard,
+    Spare_Button,
+    Spare_Switch,
+    Regen,
+    DAQ_Button
+};
+
+enum FCMessage {
+    Gas,
+    Brake,
+    FC_Pressure,
+    Hydrogen_Flow_Rate
+};
+
+enum RCMessage{
+    RC_Pressure,
+    RC_Torque
+};
+
+enum JouleMessage {
+    Power,
+    Current,
+    Voltage
+};
+
+enum DAQMessage {
+    Longitude,
+    Latitude,
+    Altitude,
+};
+
+enum IMUMessage{
+    Accel_X,
+    Accel_Y,
+    Accel_Z,
+    Gyro_X,
+    Gyro_Y,
+    Gyro_Z
+};
+
+enum SafetyMessage{
+    Hydrogen_Sensor
+};
+
+#endif
